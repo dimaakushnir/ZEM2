@@ -2797,7 +2797,7 @@ body.lock {
   height: 100%;
   border-radius: 20px;
   background-color: #fff;
-  padding: 15px 0;
+  padding: 15px;
 }
 .permit-documents__document_1 {
   margin: 0 0 0 150px;
@@ -2828,11 +2828,25 @@ body.lock {
   .permit-documents__document_1 {
     margin: 0 0 30px 0;
   }
+  .permit-documents__document_1 img {
+    -moz-transform: scale(0.85);
+    -ms-transform: scale(0.85);
+    -webkit-transform: scale(0.85);
+    -o-transform: scale(0.85);
+    transform: scale(0.85);
+  }
 }
 .permit-documents__document_2 {
   margin: -225px 190px 0 0;
   max-width: 425px;
   max-height: 535px;
+}
+.permit-documents__document_2 img {
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
 }
 @media (max-width: 1322px) {
   .permit-documents__document_2 {
@@ -2857,6 +2871,13 @@ body.lock {
   .permit-documents__document_2 {
     margin: 0 0 30px 0;
   }
+  .permit-documents__document_2 img {
+    -moz-transform: scale(0.85);
+    -ms-transform: scale(0.85);
+    -webkit-transform: scale(0.85);
+    -o-transform: scale(0.85);
+    transform: scale(0.85);
+  }
 }
 .permit-documents__document_3 {
   margin: -100px 0 0 335px;
@@ -2876,27 +2897,8 @@ body.lock {
     max-height: 505px;
   }
 }
-.permit-documents__document_3 img {
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -webkit-transform: scale(1);
-  -o-transform: scale(1);
-  transform: scale(1);
-}
-.permit-documents__document img {
-  max-width: 100%;
-}
-@media (max-width: 1322px) {
-  .permit-documents__document img {
-    -moz-transform: scale(0.9);
-    -ms-transform: scale(0.9);
-    -webkit-transform: scale(0.9);
-    -o-transform: scale(0.9);
-    transform: scale(0.9);
-  }
-}
-@media (max-width: 767.98px) {
-  .permit-documents__document img {
+@media (max-width: 479.98px) {
+  .permit-documents__document_3 img {
     -moz-transform: scale(0.85);
     -ms-transform: scale(0.85);
     -webkit-transform: scale(0.85);
@@ -2904,14 +2906,8 @@ body.lock {
     transform: scale(0.85);
   }
 }
-@media (max-width: 479.98px) {
-  .permit-documents__document img {
-    -moz-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    -webkit-transform: scale(0.8);
-    -o-transform: scale(0.8);
-    transform: scale(0.8);
-  }
+.permit-documents__document img {
+  max-width: 100%;
 }
 @media (max-width: 479.98px) {
   .permit-documents__document {
