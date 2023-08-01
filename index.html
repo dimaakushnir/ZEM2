@@ -104,10 +104,11 @@
         <div class="popup__body">
             <div class="popup__content">
                 <a href="#" class="popup__close close-popup"></a>
-                <form action="#" class="popup__form form popup__form_1">
+                <form action="#" class="popup__form form popup__form_1 form-popup">
                     <h3 class="form__title">Дізнатись детальніше</h3>
-                    <input type='text' name='form[]' class='form__input' placeholder="Ім’я" required>
-                    <input type='tel' name='form[]' class='form__input' placeholder="+38 (000) 000 00 00" required>
+                    <input type='text' name='name' class='form__input _req' placeholder="Ім’я" required>
+                    <input type='tel' name='tel' class='form__input _req' placeholder="+38 (000) 000 00 00" required>
+                    <input type='text' name='hidden' class='form__input_hidden'>
                     <button type='submit' class='form__btn btn'>Надіслати</button>
                 </form>
             </div>
@@ -190,9 +191,10 @@
                                 </div>
                                 <form action="#" class="main__form form">
                                     <h3 class="form__title">Дізнатись детальніше</h3>
-                                    <input type='text' name='form[]' class='form__input' placeholder="Ім’я" required>
-                                    <input type='tel' name='form[]' class='form__input'
+                                    <input type='text' name='name' class='form__input _req' placeholder="Ім’я" required>
+                                    <input type='tel' name='tel' class='form__input _req'
                                         placeholder="+38 (000) 000 00 00" required>
+                                    <input type='text' name='hidden' class='form__input_hidden'>
                                     <button type='submit' class='form__btn btn'>Надіслати</button>
                                 </form>
                             </div>
@@ -279,7 +281,7 @@
                                 <p>
                                     Також раніше <span>була практика узаконення самобуду рішенням суду</span>, і багато
                                     власників
-                                    незареєстрованої нерухомості помилково вважають, що можуть ввести свої об’в
+                                    незареєстрованої нерухомості помилково вважають, що можуть ввести свої об’єкти в
                                     експлуатацію
                                     через суд. Але <span>сьогодні такий варіант легалізації нерухомості вже
                                         неможливий.</span>
@@ -305,9 +307,10 @@
                             <div class="order-service__content">
                                 <form action="" class="order-service__form form">
                                     <h3 class="form__title">Замовити послугу</h3>
-                                    <input type='text' name='form[]' class='form__input' placeholder="Ім’я" required>
-                                    <input type='tel' name='form[]' class='form__input'
+                                    <input type='text' name='name' class='form__input _req' placeholder="Ім’я" required>
+                                    <input type='tel' name='tel' class='form__input _req'
                                         placeholder="+38 (000) 000 00 00" required>
+                                    <input type='text' name='hidden' class='form__input_hidden'>
                                     <button type='submit' class='form__btn btn'>Надіслати</button>
                                 </form>
                                 <div class="order-service__body">
@@ -472,9 +475,10 @@
                             </div>
                             <form action="#" class="how-get__form form">
                                 <h3 class="form__title">Дізнатись детальніше</h3>
-                                <input type='text' name='form[]' class='form__input' placeholder="Ім’я" required>
-                                <input type='tel' name='form[]' class='form__input' placeholder="+38 (000) 000 00 00"
+                                <input type='text' name='name' class='form__input _req' placeholder="Ім’я" required>
+                                <input type='tel' name='tel' class='form__input _req' placeholder="+38 (000) 000 00 00"
                                     required>
+                                <input type='text' name='hidden' class='form__input_hidden'>
                                 <button type='submit' class='form__btn btn'>Надіслати</button>
                             </form>
                         </div>
@@ -593,9 +597,10 @@
                         <div class="simple-system__row">
                             <form action="#" class="simple-system__form form">
                                 <h3 class="form__title">Дізнатись детальніше</h3>
-                                <input type='text' name='form[]' class='form__input' placeholder="Ім’я" required>
-                                <input type='tel' name='form[]' class='form__input' placeholder="+38 (000) 000 00 00"
+                                <input type='text' name='name' class='form__input _req' placeholder="Ім’я" required>
+                                <input type='tel' name='tel' class='form__input _req' placeholder="+38 (000) 000 00 00"
                                     required>
+                                <input type='text' name='hidden' class='form__input_hidden'>
                                 <button type='submit' class='form__btn btn'>Надіслати</button>
                             </form>
                             <div class="simple-system__content">
@@ -730,16 +735,17 @@
                                     <use xlink:href="#email"></use>
                                 </svg>
                             </a>
-                            <a href="mailto:zemexpert@gmai.com" class="link-item-footer__link">zemexpert@gmai.com</a>
+                            <a href="mailto:lexproua@ukr.net" class="link-item-footer__link">lexproua@ukr.net</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="footer__column">
-                <form action="#" class="footer__form form">
+                <form action="#" class="footer__form form form-footer">
                     <h3 class="form__title">Зворотній зв’язок</h3>
-                    <input type='text' name='form[]' class='form__input' placeholder="Ім’я" required>
-                    <input type='tel' name='form[]' class='form__input' placeholder="+38 (000) 000 00 00" required>
+                    <input type='text' name='name' class='form__input _req' placeholder="Ім’я" required>
+                    <input type='tel' name='tel' class='form__input _req' placeholder="+38 (000) 000 00 00" required>
+                    <input type='text' name='hidden' class='form__input_hidden'>
                     <button type='submit' class='form__btn btn'>Надіслати</button>
                 </form>
             </div>
@@ -783,6 +789,41 @@
         <div class="footer__copyright">ZeminUa 2023 Всі права захищені</div>
     </div>
 </footer>
+            <div class="contacts">
+                <a href="" class="contacts__open active">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.1016 9.07812C10.2911 9.07812 9.57685 9.47682 9.12825 10.0831L5.24973 8.09714C5.31412 7.87765 5.35938 7.65018 5.35938 7.41016C5.35938 7.0846 5.29263 6.7751 5.17732 6.49042L9.23636 4.04786C9.68808 4.578 10.352 4.92188 11.1016 4.92188C12.4586 4.92188 13.5625 3.81798 13.5625 2.46094C13.5625 1.10389 12.4586 0 11.1016 0C9.74452 0 8.64062 1.10389 8.64062 2.46094C8.64062 2.77367 8.70502 3.07032 8.81185 3.34573L4.74072 5.79545C4.28939 5.28106 3.635 4.94922 2.89844 4.94922C1.54139 4.94922 0.4375 6.05311 0.4375 7.41016C0.4375 8.7672 1.54139 9.87109 2.89844 9.87109C3.7223 9.87109 4.44858 9.46069 4.89549 8.83734L8.76124 10.8169C8.69004 11.0467 8.64062 11.2861 8.64062 11.5391C8.64062 12.8961 9.74452 14 11.1016 14C12.4586 14 13.5625 12.8961 13.5625 11.5391C13.5625 10.182 12.4586 9.07812 11.1016 9.07812Z"
+                            fill="white"></path>
+                    </svg>
+                </a>
+                <a href="" class="contacts__close">
+                    <img src="img/contacts/close.png" alt="close-icon">
+                </a>
+                <ul class="contacts__items">
+                    <li class="contacts__item">
+                        <a href="https://t.me/lexproua" target="_blank" class="contacts__link">
+                            <img src="img/contacts/telegram.png" alt="telegram">
+                        </a>
+                    </li>
+                    <li class="contacts__item">
+                        <a href="viber://pa?chatURI=+380637509933/" target="_blank" class="contacts__link">
+                            <img src="img/contacts/viber.png" alt="viber">
+                        </a>
+                    </li>
+                    <li class="contacts__item">
+                        <a href="https://www.instagram.com/lexpro.com.ua/?igshid=MzRlODBiNWFlZA%3D%3D" target="_blank"
+                            class="contacts__link">
+                            <img src="img/contacts/instagram.png" alt="instagram">
+                        </a>
+                    </li>
+                    <li class="contacts__item">
+                        <a href="tel:+380637509933" class="contacts__link">
+                            <img src="img/contacts/phone.svg" alt="phone">
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
     <script src="js/app.min.js"></script>

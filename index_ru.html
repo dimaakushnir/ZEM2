@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.min.css">
-    <title>Головна</title>
+    <title>Главная</title>
 </head>
 
 <body>
@@ -104,11 +104,12 @@
         <div class="popup__body">
             <div class="popup__content">
                 <a href="#" class="popup__close close-popup"></a>
-                <form action="#" class="popup__form form popup__form_1">
-                    <h3 class="form__title">Дізнатись детальніше</h3>
-                    <input type='text' name='form[]' class='form__input' placeholder="Ім’я" required>
-                    <input type='tel' name='form[]' class='form__input' placeholder="+38 (000) 000 00 00" required>
-                    <button type='submit' class='form__btn btn'>Надіслати</button>
+                <form action="#" class="popup__form form popup__form_1 form-popup">
+                    <h3 class="form__title">Узнать подробнее</h3>
+                    <input type='text' name='name' class='form__input _req' placeholder="Имя" required>
+                    <input type='tel' name='tel' class='form__input _req' placeholder="+38 (000) 000 00 00" required>
+                    <input type='text' name='hidden' class='form__input_hidden'>
+                    <button type='submit' class='form__btn btn'>Отправить</button>
                 </form>
             </div>
         </div>
@@ -118,9 +119,9 @@
             <div class="popup-done__content">
                 <a href="#" class="popup-done__close close-popup-done"></a>
                 <div class="popup-done__message message">
-                    <div class="message__title">Ви неперевершені</div>
+                    <div class="message__title">Вы непревзойденные</div>
                     <div class="message__text">
-                        Дякуємо за звернення. Ми зв'яжемося з вами найближчим часом
+                        Спасибо за обращение. Мы свяжемся с вами в ближайшее время
                     </div>
                     <div class="message__image">
                         <iframe src="https://gifer.com/embed/PWqs" width="100%" height="100%"
@@ -141,7 +142,7 @@
                                 <svg class="telegram-header__icon">
                                     <use xlink:href="#telegram"></use>
                                 </svg>
-                                <span>Написати в телеграм</span>
+                                <span>Написать в телеграм</span>
                             </a>
                             <a href="tel:+380999999999" class="header__phone phone-header">
                                 <svg class="phone-header__icon phone-icon-header">
@@ -180,20 +181,21 @@
                             <div class="main__row">
                                 <div class="main__content">
                                     <h1 class="main__title">
-                                        <span>Введення в експлуатацію</span> житлового або садового (дачного) будинку
+                                        <span>Ввод в эксплуатацию</span> жилого или садового (дачного) дома
                                     </h1>
                                     <div class="main__subtitle">
-                                        Юридична допомога в отриманні правових документів на нове будівництво, та
-                                        реєстрація зведенних будинків за спрощеною системою в Харкові та області
+                                        Юридическая помощь в получении правовых документов на новое строительство, и
+                                        регистрация возведенных домов по упрощенной системе в Харькове и области
                                     </div>
-                                    <a href="" class="main__btn btn popup-click">Замовити послугу</a>
+                                    <a href="" class="main__btn btn popup-click">Заказать услугу</a>
                                 </div>
                                 <form action="#" class="main__form form">
-                                    <h3 class="form__title">Дізнатись детальніше</h3>
-                                    <input type='text' name='form[]' class='form__input' placeholder="Ім’я" required>
-                                    <input type='tel' name='form[]' class='form__input'
+                                    <h3 class="form__title">Узнать подробнее</h3>
+                                    <input type='text' name='name' class='form__input _req' placeholder="Имя" required>
+                                    <input type='tel' name='tel' class='form__input _req'
                                         placeholder="+38 (000) 000 00 00" required>
-                                    <button type='submit' class='form__btn btn'>Надіслати</button>
+                                    <input type='text' name='hidden' class='form__input_hidden'>
+                                    <button type='submit' class='form__btn btn'>Отправить</button>
                                 </form>
                             </div>
                         </div>
@@ -207,35 +209,30 @@
                         <div class="about__body">
                             <div class="about__content">
                                 <h2 class="about__title title title_color">
-                                    <span>Що таке Введення в експлуатацію</span> об’єкта нерухомості?
+                                    <span>Что такое Ввод в эксплуатацию</span> объекта недвижимости?
                                 </h2>
                                 <div class="about__text">
                                     <p>
-                                        <span>Введення об’єкта в експлуатацію</span> - це обов'язкова, передбачена
+                                        <span>Ввод объекта в эксплуатацию</span> - это обязательная, предусмотренная
                                         законом процедура,
-                                        яку
-                                        власник новобудови повинен пройти, перш ніж користуватись своєю будівлею або
-                                        спорудою. <span>Саме ця документація надає вам право експлуатувати
-                                            об’єкт</span>: <span class="underline">продати,
-                                            подарувати, передати у спадок, внести до статутного капіталу або отримати
-                                            під її
-                                            заставу кредит.</span>
+                                        которую владелец новостройки должен пройти, прежде чем пользоваться своим
+                                        зданием или сооружением. <span>Именно эта документация дает вам право
+                                            эксплуатировать объект</span>: <span class="underline">продать, подарить,
+                                            передать по наследству, внести в уставный капитал или получить под ее залог
+                                            кредит.</span>
                                     </p>
 
                                     <p>
-                                        <span>Нерухомість, яка не пройшла процедуру введення</span> в експлуатацію
-                                        де-юре для держави
-                                        не
-                                        існує: її  <span class="underline">неможливо купити/продати, подарувати,
-                                            передати у спадок, внести до
-                                            статутного капіталу або отримати під її заставу кредит.</span>
-                                        Також якщо незареєстрований будинок постраждав внаслідок бойових дій, ви не
-                                        зможете
-                                        отримати відшкодування коштів від держави
+                                        <span>Недвижимость, которая не прошла процедуру введения</span> в эксплуатацию
+                                        де-юре для государства не существует: её  <span class="underline">невозможно
+                                            купить/продать, подарить, передать по наследству, внести в уставный капитал
+                                            или получить под ее залог кредит.</span>
+                                        Также если незарегистрированный дом пострадал в результате боевых действий, вы
+                                        не сможете получить возмещение средств от государства
                                     </p>
 
                                 </div>
-                                <a href="" class="about__btn btn popup-click">Дізнатись детальніше</a>
+                                <a href="" class="about__btn btn popup-click">Узнать подробнее</a>
                             </div>
                         </div>
                     </div>
@@ -247,22 +244,21 @@
                     <div class="possible-block__container container">
                         <div class="possible-block__body">
                             <h2 class="possible-block__title title">
-                                Чи можна <span>не вводити в експлуатацію</span> об'єкт нерухомості
+                                Можно ли <span>не вводить в эксплуатацию</span> объект недвижимости
                             </h2>
                             <div class="possible-block__text">
-                                <span>Існує міф, що дешевше спочатку побудувати будинок</span>, а потім його
-                                зареєструвати. Але на
-                                практиці виявляється все навпаки, і <span>реєстрація самобуду виходить вам значно
-                                    дорожче</span> ніж
-                                якби ви отримали необхідні документи ще до початку будівництва.<br>
-                                Згідно із законодавством України, будь-яка зведена будівля повинна бути зареєстрована у
-                                державному реєстрі речових прав на нерухоме майно.<br>
-                                <span>За нерухомість, яку побудовано без відповідних дозвільних документів державою
-                                    передбачено накладення штрафу</span> в розмірі від двохсот п’ятдесяти
-                                неоподатковуваних
-                                мінімумів доходів громадян <span>(335 500 грн)</span> до трьохсот п’ятдесяти
-                                неоподатковуваних
-                                мінімумів доходів громадян <span>(469 700 грн)</span>
+                                <span>Существует миф, что дешевле сначала построить дом</span>, а затем его
+                                зарегистрировать. Но на практике оказывается все наоборот, и <span>регистрация самостроя
+                                    выходит вам значительно дороже</span> чем если бы вы получили необходимые документы
+                                еще до начала строительства.<br>
+                                Согласно законодательству Украины, любое возведенное здание должно быть зарегистрировано
+                                в государственном реестре вещных прав на недвижимое имущество.<br>
+                                <span>За недвижимость, которая построена без соответствующих разрешительных документов
+                                    государством предусмотрено наложение штрафа</span> в размере от двухсот пятидесяти
+                                необлагаемых налогом
+                                минимумов доходов граждан <span>(335 500 грн)</span> до трехсот пятидесяти необлагаемых
+                                налогом
+                                минимумов доходов граждан <span>(469 700 грн)</span>
 
                             </div>
                             <div class="possible-block__other-text other-text-possible-block">
@@ -270,29 +266,27 @@
                                     <img src="img/other-images/home.png" alt="house">
                                 </div>
                                 <div class="other-text-possible-block__content">
-                                    Такий будинок не можна купити/продати, подарувати, у нього неможливо прописатися,
-                                    провести комунікації.  А якщо ваш дім постраждає внаслідок бойових дій, ви не
-                                    зможете отримати відшкодування від держави
+                                    Такой дом нельзя купить/продать, подарить, в него невозможно прописаться, провести
+                                    коммуникации. А если ваш дом пострадает в результате боевых действий, вы не сможете
+                                    получить возмещение от государства
                                 </div>
                             </div>
                             <div class="possible-block__text">
                                 <p>
-                                    Також раніше <span>була практика узаконення самобуду рішенням суду</span>, і багато
-                                    власників
-                                    незареєстрованої нерухомості помилково вважають, що можуть ввести свої об’в
-                                    експлуатацію
-                                    через суд. Але <span>сьогодні такий варіант легалізації нерухомості вже
-                                        неможливий.</span>
+                                    Также ранее <span>была практика узаконивания самостроя решением суда</span>, и
+                                    многие владельцы незарегистрированной недвижимости ошибочно считают, что могут
+                                    ввести свои объекты в эксплуатацию через суд. Но <span>сегодня такой вариант
+                                        легализации недвижимости уже
+                                        невозможен.</span>
                                 </p>
                                 <p>
-                                    Тому для економії вашого часу, грошей і нервів ми наполегливо <span>радимо
-                                        зробити все
-                                        своєчасно і зареєструвати вашу нерухомість.</span>
+                                    Поэтому для экономии вашего времени, денег и нервов мы настойчиво <span>советуем
+                                        сделать все своевременно и зарегистрировать вашу недвижимость.</span>
                                 </p>
 
 
                             </div>
-                            <a href="" class="possible-block__btn btn popup-click">Дізнатись детальніше</a>
+                            <a href="" class="possible-block__btn btn popup-click">Узнать подробнее</a>
                         </div>
                     </div>
                 </section>
@@ -304,19 +298,20 @@
                         <div class="order-service__row">
                             <div class="order-service__content">
                                 <form action="" class="order-service__form form">
-                                    <h3 class="form__title">Замовити послугу</h3>
-                                    <input type='text' name='form[]' class='form__input' placeholder="Ім’я" required>
-                                    <input type='tel' name='form[]' class='form__input'
+                                    <h3 class="form__title">Заказать услугу</h3>
+                                    <input type='text' name='name' class='form__input _req' placeholder="Имя" required>
+                                    <input type='tel' name='tel' class='form__input _req'
                                         placeholder="+38 (000) 000 00 00" required>
-                                    <button type='submit' class='form__btn btn'>Надіслати</button>
+                                    <input type='text' name='hidden' class='form__input_hidden'>
+                                    <button type='submit' class='form__btn btn'>Отправить</button>
                                 </form>
                                 <div class="order-service__body">
                                     <h2 class="order-service__title title title_black">
-                                        Зробіть все правильно та <span>отримайте юридично сильні</span>
-                                        <span>документи</span>
-                                        Заощадшивши <span class="order-service__icon order-service__icon_dollar"></span>
-                                        гроші,
-                                        час та нерви А ми вам в цьому допоможемо <span
+                                        Сделайте все правильно и <span>получите юридически сильные</span>
+                                        <span>документы</span>
+                                        Сэкономив <span class="order-service__icon order-service__icon_dollar"></span>
+                                        деньги,
+                                        время и нервы А мы вам в этом поможем <span
                                             class="order-service__icon order-service__icon_hands"></span>
                                     </h2>
                                 </div>
@@ -328,29 +323,29 @@
                     <div class="categories__container container">
                         <div class="categories__body">
                             <h2 class="categories__title title title_color">
-                                Категорії складності об’єктів будівництва
+                                Категории сложности объектов строительства
                             </h2>
                             <div class="categories__subtitle">
-                                Залежно від того, який у вас об'єкт нерухомості, вам потрібні будуть певні документи для
-                                введення об'єкта в експлуатацію. Згідно Закону України "Про регулювання містобудівної
-                                діяльності” всі об’єкти будівництва поділяють на 5 категорій:
+                                В зависимости от того, какой у вас объект недвижимости, вам нужны будут определенные
+                                документы для ввода объекта в эксплуатацию. Согласно Закону Украины "О регулировании
+                                градостроительной деятельности" все объекты строительства разделяют на 5 категорий:
                             </div>
                             <div class="categories__row">
                                 <div class="categories__column categories__column_text">
                                     <div class="categories__inner">
-                                        <h4 class="categories__label">I - III категорія складності</h4>
-                                        <div class="categories__sublabel">Приватні, садові, дачні будинки</div>
+                                        <h4 class="categories__label">I - III категория сложности</h4>
+                                        <div class="categories__sublabel">Частные, садовые, дачные дома</div>
                                         <div class="categories__text">
-                                            Якщо ваш об’єкт відноситься до цих категорій, вам <span>необхідно отримати
-                                                декларацію про готовність об'єкта до експлуатації</span>
+                                            Если ваш объект относится к этим категориям, вам <span>необходимо получить
+                                                декларацию о готовности объекта к эксплуатации</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="categories__column categories__column_btn">
                                     <div class="categories__inner-btn">
                                         <div class="categories__content">
-                                            <h4 class="categories__label">декларація</h4>
-                                            <a href="" class="categories__btn btn popup-click">Замовити</a>
+                                            <h4 class="categories__label">декларация</h4>
+                                            <a href="" class="categories__btn btn popup-click">Заказать</a>
                                         </div>
                                         <div class="categories__image">
                                             <img src="img/other-images/documents.png" alt="documents">
@@ -360,8 +355,8 @@
                                 <div class="categories__column categories__column_btn">
                                     <div class="categories__inner-btn">
                                         <div class="categories__content">
-                                            <h4 class="categories__label">сертифікат<br> відповідності</h4>
-                                            <a href="" class="categories__btn btn popup-click">Замовити</a>
+                                            <h4 class="categories__label">сертификат<br> соответствия</h4>
+                                            <a href="" class="categories__btn btn popup-click">Заказать</a>
                                         </div>
                                         <div class="categories__image">
                                             <img src="img/other-images/certificate.png" alt="certificate">
@@ -370,12 +365,12 @@
                                 </div>
                                 <div class="categories__column categories__column_text">
                                     <div class="categories__inner">
-                                        <h4 class="categories__label">IV - V категорія складності</h4>
-                                        <div class="categories__sublabel">Багатоквартирний будинок, торговий центр і
-                                            т.д.</div>
+                                        <h4 class="categories__label">IV - V категория сложности</h4>
+                                        <div class="categories__sublabel">Многоквартирный дом, торговый центр и т.д.
+                                        </div>
                                         <div class="categories__text">
-                                            В цьому випадку вам <span>потрібен сертифікат про прийняття в експлуатацію
-                                                закінченного будівництвом об'єкта</span>
+                                            В этом случае вам <span>нужен сертификат о принятии в эксплуатацию
+                                                законченного строительством объекта</span>
                                         </div>
                                     </div>
                                 </div>
@@ -390,20 +385,20 @@
                     <div class="permit-documents__container container">
                         <div class="permit-documents__body">
                             <h2 class="permit-documents__title title title_black">
-                                перелік документів на <span>готовий до експлуатації</span> житловий або садовий (дачний)
-                                <span>будинок</span>
+                                перечень документов на <span>готовый к эксплуатации</span> жилой или садовый (дачный)
+                                <span>дом</span>
                             </h2>
                             <div class="permit-documents__row">
                                 <div class="permit-documents__top">
                                     <div class="permit-documents__text permit-documents__text_1">
                                         <div class="permit-documents__label">
-                                            <span>Технічний паспорт</span> (інвентаризація)
+                                            <span>Технический паспорт</span> (инвентаризация)
                                         </div>
                                         <div class="permit-documents__sublabel">
-                                            Першим етапом введення в експлуатацію житлового або садового (дачного)
-                                            будинку є проведення технічної інвентаризації будинку. Для цього ваш будинок
-                                            має бути побудований, з накритим дахом і встановленими вікнами. Після чого
-                                            технік робить виміри і видає паспорт технічної інвентаризації на будову
+                                            Первым этапом ввода в эксплуатацию жилого или садового (дачного) дома
+                                            является проведение технической инвентаризации дома. Для этого ваш дом
+                                            должен быть построен, с накрытой крышей и установленными окнами. После чего
+                                            техник делает замеры и выдает паспорт технической инвентаризации на строение
                                         </div>
                                     </div>
                                     <div class="permit-documents__document permit-documents__document_1">
@@ -416,25 +411,24 @@
                                     </div>
                                     <div class="permit-documents__text permit-documents__text_2">
                                         <div class="permit-documents__label">
-                                            <span>Декларація про готовність</span><br> об’єкта до експлуатації
+                                            <span>Декларация о готовности</span><br> объекта к эксплуатации
                                         </div>
                                         <div class="permit-documents__sublabel">
-                                            Другий етап введення будинку в експлуатацію  є отримання “Декларації про
-                                            готовність об’єкта нерухомості до експлуатації” із внесенням його до єдиного
-                                            Українського реєстру документів у сфері будівництва
+                                            Второй этап ввода дома в эксплуатацию является получение "Декларации о
+                                            готовности объекта недвижимости к эксплуатации" с внесением его в единый
+                                            Украинский реестр документов в сфере строительства
                                         </div>
                                     </div>
                                 </div>
                                 <div class="permit-documents__footer">
                                     <div class="permit-documents__text permit-documents__text_3">
                                         <div class="permit-documents__label">
-                                            <span>Реєстрація права</span> власності
+                                            <span>Регистрация права</span> собственности
                                         </div>
                                         <div class="permit-documents__sublabel">
-                                            Заключний етап - це реєстрація будинку в єдиному Українському реєстрі
-                                            речових прав не нерухоме майно ДРРП
-                                            Після цієї процедури ви стаєте повноцінним і щасливим власником
-                                            зареєстрованого будинку
+                                            Заключительный этап - это регистрация дома в едином Украинском реестре
+                                            вещных прав не недвижимое имущество ГРРП После этой процедуры вы становитесь
+                                            полноценным и счастливым владельцем зарегистрированного дома
                                         </div>
                                     </div>
                                     <div class="permit-documents__document permit-documents__document_3">
@@ -453,29 +447,29 @@
                         <div class="how-get__row">
                             <div class="how-get__content">
                                 <h2 class="how-get__title title title_black">
-                                    <span>Як ввести будинок в експлуатацію</span> швидко і без черг?
+                                    <span>Как ввести дом в эксплуатацию</span> быстро и без очередей?
                                 </h2>
                                 <div class="how-get__text">
                                     <p>
                                         <span>
-                                            Процес отримання документів на вводу будинку в експлуатацію разом з
-                                            компанією “ZEM” дуже простий, швидкий та не потребує вашої участі.
+                                            Процесс получения документов на ввод дома в эксплуатацию вместе с компанией
+                                            "ZEM" очень простой, быстрый и не требует вашего участия.
                                         </span>
                                     </p>
                                     <p>
-                                        Наша команда має величезний досвід юридичної допомоги в отриманні всіх
-                                        необхідних документів для введення будинку в експлуата і ми з радістю
-                                        продемонструємо свій професіоналізм та вирішимо ваше питання легко, швидко та за
-                                        приємною ціною
+                                        Наша команда имеет огромный опыт юридической помощи в получении всех необходимых
+                                        документов для ввода дома в эксплуатацию и мы с радостью продемонстрируем свой
+                                        профессионализм и решим ваш вопрос легко, быстро и по приятной цене
                                     </p>
                                 </div>
                             </div>
                             <form action="#" class="how-get__form form">
-                                <h3 class="form__title">Дізнатись детальніше</h3>
-                                <input type='text' name='form[]' class='form__input' placeholder="Ім’я" required>
-                                <input type='tel' name='form[]' class='form__input' placeholder="+38 (000) 000 00 00"
+                                <h3 class="form__title">Узнать подробнее</h3>
+                                <input type='text' name='name' class='form__input _req' placeholder="Имя" required>
+                                <input type='tel' name='tel' class='form__input _req' placeholder="+38 (000) 000 00 00"
                                     required>
-                                <button type='submit' class='form__btn btn'>Надіслати</button>
+                                <input type='text' name='hidden' class='form__input_hidden'>
+                                <button type='submit' class='form__btn btn'>Отправить</button>
                             </form>
                         </div>
                     </div>
@@ -484,14 +478,14 @@
                     <div class="necessary-documents__container container">
                         <div class="necessary-documents__body">
                             <h2 class="necessary-documents__title title title_color">
-                                Список необхідних <span>документів</span>
+                                Список необходимых <span>документов</span>
                             </h2>
                             <div class="necessary-documents__row">
                                 <div class="necessary-documents__column">
                                     <div class="necessary-documents__item">
                                         <div class="necessary-documents__image">
                                             <img src="img/necessary-documents/01.jpg" alt="document">
-                                            <span>Копія</span>
+                                            <span>Копия</span>
                                         </div>
                                         <div class="necessary-documents__label">Паспорт</div>
                                     </div>
@@ -500,19 +494,19 @@
                                     <div class="necessary-documents__item">
                                         <div class="necessary-documents__image">
                                             <img src="img/necessary-documents/02.jpg" alt="document">
-                                            <span>Копія</span>
+                                            <span>Копия</span>
                                         </div>
-                                        <div class="necessary-documents__label">ІПН</div>
+                                        <div class="necessary-documents__label">ИНН</div>
                                     </div>
                                 </div>
                                 <div class="necessary-documents__column">
                                     <div class="necessary-documents__item">
                                         <div class="necessary-documents__image">
                                             <img src="img/necessary-documents/03.jpg" alt="document">
-                                            <span>Оригінал</span>
+                                            <span>Оригинал</span>
                                         </div>
                                         <div class="necessary-documents__label">
-                                            Будівельний паспорт
+                                            Строительный паспорт
                                         </div>
                                     </div>
                                 </div>
@@ -520,11 +514,10 @@
                                     <div class="necessary-documents__item">
                                         <div class="necessary-documents__image">
                                             <img src="img/necessary-documents/04.jpg" alt="document">
-                                            <span>Оригінал</span>
+                                            <span>Оригинал</span>
                                         </div>
                                         <div class="necessary-documents__label">
-                                            Декларація про початок
-                                            будівельних работ
+                                            Декларация о начале строительных работ
                                         </div>
                                     </div>
                                 </div>
@@ -539,7 +532,7 @@
                     <div class="why-choose__container container">
                         <div class="why-choose__body">
                             <h2 class="why-choose__title title">
-                                <span>Чому клієнти</span> обирають<br> <a href="" class="logo logo_black">ZEM</a>
+                                <span>Почему клиенты</span> выбирают<br> <a href="" class="logo logo_black">ZEM</a>
                             </h2>
                             <div class="why-choose__row">
                                 <div class="why-choose__column">
@@ -548,12 +541,11 @@
                                             <img src="img/why-choose/01.png" alt="sticker">
                                         </div>
                                         <div class="why-choose__label">
-                                            Швідкість<br> та зручність
+                                            Скорость<br> и удобство
                                         </div>
                                         <div class="why-choose__text">
-                                            Ми працюємо в будь якій точці України. Також для вашого комфорту та економії
-                                            часу
-                                            маємо можливість виконати роботу навіть дистанційно.
+                                            Мы работаем в любой точке Украины. Также для вашего комфорта и экономии
+                                            времени имеем возможность выполнить работу даже дистанционно.
                                         </div>
                                     </div>
                                 </div>
@@ -562,10 +554,12 @@
                                         <div class="why-choose__icon">
                                             <img src="img/why-choose/02.png" alt="sticker">
                                         </div>
-                                        <div class="why-choose__label">Гарантований результат та<br> безпека</div>
+                                        <div class="why-choose__label">Гарантированный результат и<br> безопасность
+                                        </div>
                                         <div class="why-choose__text">
-                                            Для нас не їснує задач, які б наши фахівці не могли виконати.<br>
-                                            В іншому випадку повернемо гроші в 100% обсязі
+                                            Для нас не существует задач, которые бы наши специалисты не могли
+                                            выполнить.<br>
+                                            В противном случае вернем деньги в 100% объеме
                                         </div>
                                     </div>
                                 </div>
@@ -575,12 +569,11 @@
                                             <img src="img/why-choose/03.png" alt="sticker">
                                         </div>
                                         <div class="why-choose__label">
-                                            Лідерські позиции в галузі<br> землеустрою
+                                            Лидерские позиции в отрасли<br> землеустройства
                                         </div>
                                         <div class="why-choose__text">
-                                            За 10 років існування компанії допомогли сотням клієнтів отримати документи
-                                            з
-                                            позитивним результатом, тому що ми знаємо про землю все
+                                            За 10 лет существования компании помогли сотням клиентов получить документы
+                                            з положительным результатом, потому что мы знаем о земле все
                                         </div>
                                     </div>
                                 </div>
@@ -592,34 +585,32 @@
                     <div class="simple-system__container container">
                         <div class="simple-system__row">
                             <form action="#" class="simple-system__form form">
-                                <h3 class="form__title">Дізнатись детальніше</h3>
-                                <input type='text' name='form[]' class='form__input' placeholder="Ім’я" required>
-                                <input type='tel' name='form[]' class='form__input' placeholder="+38 (000) 000 00 00"
+                                <h3 class="form__title">Узнать подробнее</h3>
+                                <input type='text' name='name' class='form__input _req' placeholder="Имя" required>
+                                <input type='tel' name='tel' class='form__input _req' placeholder="+38 (000) 000 00 00"
                                     required>
-                                <button type='submit' class='form__btn btn'>Надіслати</button>
+                                <input type='text' name='hidden' class='form__input_hidden'>
+                                <button type='submit' class='form__btn btn'>Отправить</button>
                             </form>
                             <div class="simple-system__content">
                                 <h2 class="simple-system__title title title_black">
-                                    <span>Спрощена система</span> реєстрації будинків
+                                    <span>Упрощённая система</span> регистрации домов
                                 </h2>
                                 <div class="simple-system__text">
                                     <p>
-                                        <span>Якщо у вас є зведений будинок</span>, який не був зареєстрований і ви
-                                        хочете
-                                        зробити на нього
-                                        документи, для вас діятиме інша, <span>спрощена процедура реєстрації права
-                                            власності.</span>
+                                        <span>Если у вас есть возведенный дом</span>, который не был зарегистрирован и
+                                        вы хотите сделать на него документы, для вас будет действовать другая,
+                                        <span>упрощенная процедура регистрации права собственности.</span>
                                     </p>
                                     <p>
-                                        <span>Важливо!</span> Якщо ваш будинок зазнав ушкоджень внаслідок бойових дій,
-                                        ви можете
-                                        розраховувати на
-                                        компенсацію від держави тільки в разі, якщо нерухомість була зареєстрована.
+                                        <span>Важно!</span> Если ваш дом получил повреждения в результате боевых
+                                        действий,
+                                        вы можете рассчитывать на компенсацию от государства только в случае, если
+                                        недвижимость была зарегистрирована.
                                     </p>
                                     <p>
-                                        <span>Тому якщо у вас є самобудова, ми радимо якнайшвидше зробити на неї
-                                            документи та
-                                            зареєструвати право власності</span>
+                                        <span>Поэтому если у вас есть самостройка, мы советуем как можно быстрее сделать
+                                            на нее документы и зарегистрировать право собственности</span>
                                     </p>
                                 </div>
                             </div>
@@ -633,7 +624,7 @@
                     <div class="other-services__container container">
                         <div class="other-services__body">
                             <h2 class="other-services__title title title_black">
-                                Також надаємо <span>інші послуги</span>
+                                Также предоставляем <span>другие услуги</span>
                             </h2>
                             <div class="other-services__row">
                                 <div class="other-services__column">
@@ -642,21 +633,21 @@
                                             <span class="other-services__icon">
                                                 <img src="img/other-services/01.png" alt="service">
                                             </span>
-                                            <span class="other-services__label">Дозвільні документи на
-                                                будівництво</span>
+                                            <span class="other-services__label">Разрешительные документы на
+                                                строительство</span>
                                         </a>
                                         <a href="" class="other-services__item">
                                             <span class="other-services__icon">
                                                 <img src="img/other-services/02.png" alt="service">
                                             </span>
-                                            <span class="other-services__label">Легалізація самобуду</span>
+                                            <span class="other-services__label">Легализация самостроя</span>
                                         </a>
                                         <a href="" class="other-services__item">
                                             <span class="other-services__icon">
                                                 <img src="img/other-services/03.png" alt="service">
                                             </span>
                                             <span class="other-services__label">
-                                                Узаконення житлового, садового,<br> дачного будинку
+                                                Узаконивание жилого, садового,<br> дачного дома
                                             </span>
                                         </a>
                                     </div>
@@ -667,20 +658,21 @@
                                             <span class="other-services__icon">
                                                 <img src="img/other-services/04.png" alt="service">
                                             </span>
-                                            <span class="other-services__label">Підключення світла до будинку</span>
+                                            <span class="other-services__label">Подключение света к дому</span>
                                         </a>
                                         <a href="" class="other-services__item">
                                             <span class="other-services__icon">
                                                 <img src="img/other-services/05.png" alt="service">
                                             </span>
-                                            <span class="other-services__label">Реконструкція нерухомого майна</span>
+                                            <span class="other-services__label">Реконструкция недвижимого
+                                                имущества</span>
                                         </a>
                                         <a href="" class="other-services__item">
                                             <span class="other-services__icon">
                                                 <img src="img/other-services/06.png" alt="service">
                                             </span>
                                             <span class="other-services__label">
-                                                Архітектурне проектування<br> (АР, КР, ЄНР)
+                                                Архитектурное проектирование<br> (АР, КР, ЕНД)
                                             </span>
                                         </a>
                                     </div>
@@ -691,98 +683,138 @@
                 </section>
             </main>
             <footer class="footer">
-    <div class="footer__container container">
-        <div class="footer__row">
-            <div class="footer__column">
-                <div class="footer__item item-footer">
-                    <div class="item-footer__top">
-                        <h4 class="item-footer__title">Зв’язатись з нами</h4>
-                        <div class="item-footer__icons icons-item-footer">
-                            <div class="icons-item-footer__item">
-                                <svg class="icons-item-footer__icon icons-item-footer__icon_telegram">
-                                    <use xlink:href="#telegram"></use>
-                                </svg>
+                <div class="footer__container container">
+                    <div class="footer__row">
+                        <div class="footer__column">
+                            <div class="footer__item item-footer">
+                                <div class="item-footer__top">
+                                    <h4 class="item-footer__title">Связаться с нами</h4>
+                                    <div class="item-footer__icons icons-item-footer">
+                                        <div class="icons-item-footer__item">
+                                            <svg class="icons-item-footer__icon icons-item-footer__icon_telegram">
+                                                <use xlink:href="#telegram"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="icons-item-footer__item">
+                                            <svg class="icons-item-footer__icon icons-item-footer__icon_viber">
+                                                <use xlink:href="#viber"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="icons-item-footer__item">
+                                            <svg class="icons-item-footer__icon icons-item-footer__icon_whatsapp">
+                                                <use xlink:href="#whatsapp"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-footer__bottom">
+                                    <div class="item-footer__link link-item-footer">
+                                        <a href="" class="link-item-footer__icon">
+                                            <svg class="icons-item-footer__icon icons-item-footer__icon_tel">
+                                                <use xlink:href="#tel_2"></use>
+                                            </svg>
+                                        </a>
+                                        <a href="tel:+380999999999" class="link-item-footer__link">+38 (099) 999 99
+                                            99</a>
+                                    </div>
+                                    <div class="item-footer__link link-item-footer">
+                                        <a href="" class="link-item-footer__icon">
+                                            <svg class="icons-item-footer__icon icons-item-footer__icon_email">
+                                                <use xlink:href="#email"></use>
+                                            </svg>
+                                        </a>
+                                        <a href="mailto:lexproua@ukr.net"
+                                            class="link-item-footer__link">lexproua@ukr.net</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="icons-item-footer__item">
-                                <svg class="icons-item-footer__icon icons-item-footer__icon_viber">
-                                    <use xlink:href="#viber"></use>
-                                </svg>
-                            </div>
-                            <div class="icons-item-footer__item">
-                                <svg class="icons-item-footer__icon icons-item-footer__icon_whatsapp">
-                                    <use xlink:href="#whatsapp"></use>
-                                </svg>
+                        </div>
+                        <div class="footer__column">
+                            <form action="#" class="footer__form form form-footer">
+                                <h3 class="form__title">Обратная связь</h3>
+                                <input type='text' name='name' class='form__input _req' placeholder="Имя" required>
+                                <input type='tel' name='tel' class='form__input _req' placeholder="+38 (000) 000 00 00"
+                                    required>
+                                <input type='text' name='hidden' class='form__input_hidden'>
+                                <button type='submit' class='form__btn btn'>Отправить</button>
+                            </form>
+                        </div>
+                        <div class="footer__column">
+                            <div class="footer__item item-footer">
+                                <div class="item-footer__top">
+                                    <h4 class="item-footer__title">Наши соц сети</h4>
+                                    <div class="item-footer__icons icons-item-footer">
+                                        <div class="icons-item-footer__item">
+                                            <svg class="icons-item-footer__icon icons-item-footer__icon_instagram">
+                                                <use xlink:href="#instagram"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="icons-item-footer__item">
+                                            <svg class="icons-item-footer__icon icons-item-footer__icon_telegram">
+                                                <use xlink:href="#telegram"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="icons-item-footer__item">
+                                            <svg class="icons-item-footer__icon icons-item-footer__icon_facebook">
+                                                <use xlink:href="#facebook"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-footer__bottom">
+                                    <div class="item-footer__link link-item-footer">
+                                        <a href="" class="link-item-footer__icon">
+                                            <svg class="icons-item-footer__icon icons-item-footer__icon_point">
+                                                <use xlink:href="#point"></use>
+                                            </svg>
+                                        </a>
+                                        <a href="" class="link-item-footer__link">
+                                            61003, г. Харьков, ул. Квитки-Основьяненко 15, 6й подъезд, 4 этаж, офис
+                                            64-01
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="item-footer__bottom">
-                        <div class="item-footer__link link-item-footer">
-                            <a href="" class="link-item-footer__icon">
-                                <svg class="icons-item-footer__icon icons-item-footer__icon_tel">
-                                    <use xlink:href="#tel_2"></use>
-                                </svg>
-                            </a>
-                            <a href="tel:+380999999999" class="link-item-footer__link">+38 (099) 999 99 99</a>
-                        </div>
-                        <div class="item-footer__link link-item-footer">
-                            <a href="" class="link-item-footer__icon">
-                                <svg class="icons-item-footer__icon icons-item-footer__icon_email">
-                                    <use xlink:href="#email"></use>
-                                </svg>
-                            </a>
-                            <a href="mailto:zemexpert@gmai.com" class="link-item-footer__link">zemexpert@gmai.com</a>
-                        </div>
-                    </div>
+                    <div class="footer__copyright">ZeminUa 2023 Все права защищены</div>
                 </div>
+            </footer>
+            <div class="contacts">
+                <a href="" class="contacts__open active">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.1016 9.07812C10.2911 9.07812 9.57685 9.47682 9.12825 10.0831L5.24973 8.09714C5.31412 7.87765 5.35938 7.65018 5.35938 7.41016C5.35938 7.0846 5.29263 6.7751 5.17732 6.49042L9.23636 4.04786C9.68808 4.578 10.352 4.92188 11.1016 4.92188C12.4586 4.92188 13.5625 3.81798 13.5625 2.46094C13.5625 1.10389 12.4586 0 11.1016 0C9.74452 0 8.64062 1.10389 8.64062 2.46094C8.64062 2.77367 8.70502 3.07032 8.81185 3.34573L4.74072 5.79545C4.28939 5.28106 3.635 4.94922 2.89844 4.94922C1.54139 4.94922 0.4375 6.05311 0.4375 7.41016C0.4375 8.7672 1.54139 9.87109 2.89844 9.87109C3.7223 9.87109 4.44858 9.46069 4.89549 8.83734L8.76124 10.8169C8.69004 11.0467 8.64062 11.2861 8.64062 11.5391C8.64062 12.8961 9.74452 14 11.1016 14C12.4586 14 13.5625 12.8961 13.5625 11.5391C13.5625 10.182 12.4586 9.07812 11.1016 9.07812Z"
+                            fill="white"></path>
+                    </svg>
+                </a>
+                <a href="" class="contacts__close">
+                    <img src="img/contacts/close.png" alt="close-icon">
+                </a>
+                <ul class="contacts__items">
+                    <li class="contacts__item">
+                        <a href="https://t.me/lexproua" target="_blank" class="contacts__link">
+                            <img src="img/contacts/telegram.png" alt="telegram">
+                        </a>
+                    </li>
+                    <li class="contacts__item">
+                        <a href="viber://pa?chatURI=+380637509933/" target="_blank" class="contacts__link">
+                            <img src="img/contacts/viber.png" alt="viber">
+                        </a>
+                    </li>
+                    <li class="contacts__item">
+                        <a href="https://www.instagram.com/lexpro.com.ua/?igshid=MzRlODBiNWFlZA%3D%3D" target="_blank"
+                            class="contacts__link">
+                            <img src="img/contacts/instagram.png" alt="instagram">
+                        </a>
+                    </li>
+                    <li class="contacts__item">
+                        <a href="tel:+380637509933" class="contacts__link">
+                            <img src="img/contacts/phone.svg" alt="phone">
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <div class="footer__column">
-                <form action="#" class="footer__form form">
-                    <h3 class="form__title">Зворотній зв’язок</h3>
-                    <input type='text' name='form[]' class='form__input' placeholder="Ім’я" required>
-                    <input type='tel' name='form[]' class='form__input' placeholder="+38 (000) 000 00 00" required>
-                    <button type='submit' class='form__btn btn'>Надіслати</button>
-                </form>
-            </div>
-            <div class="footer__column">
-                <div class="footer__item item-footer">
-                    <div class="item-footer__top">
-                        <h4 class="item-footer__title">Наші соц мережі</h4>
-                        <div class="item-footer__icons icons-item-footer">
-                            <div class="icons-item-footer__item">
-                                <svg class="icons-item-footer__icon icons-item-footer__icon_instagram">
-                                    <use xlink:href="#instagram"></use>
-                                </svg>
-                            </div>
-                            <div class="icons-item-footer__item">
-                                <svg class="icons-item-footer__icon icons-item-footer__icon_telegram">
-                                    <use xlink:href="#telegram"></use>
-                                </svg>
-                            </div>
-                            <div class="icons-item-footer__item">
-                                <svg class="icons-item-footer__icon icons-item-footer__icon_facebook">
-                                    <use xlink:href="#facebook"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item-footer__bottom">
-                        <div class="item-footer__link link-item-footer">
-                            <a href="" class="link-item-footer__icon">
-                                <svg class="icons-item-footer__icon icons-item-footer__icon_point">
-                                    <use xlink:href="#point"></use>
-                                </svg>
-                            </a>
-                            <a href="" class="link-item-footer__link">
-                                61003, м. Харків, вул. Квітки-Основьяненка 15, 6й під'їзд, 4 поверх, офіс 64-01
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer__copyright">ZeminUa 2023 Всі права захищені</div>
-    </div>
-</footer>
         </div>
     </div>
     <script src="js/app.min.js"></script>
