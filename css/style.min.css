@@ -662,50 +662,57 @@ body.lock {
   flex-direction: column;
   align-items: center;
   position: fixed;
-  bottom: 40px;
+  bottom: 50px;
   right: 50px;
   z-index: 10000;
   cursor: pointer;
 }
 @media (max-width: 479.98px) {
   .contacts {
-    bottom: 0px;
-    right: 10px;
+    bottom: 15px;
+    right: 15px;
   }
 }
 .contacts__open {
   display: none;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   overflow: hidden;
-  background-color: #b766dd;
+  margin: 10px 0 0px 0;
+  background-color: #b552cb;
+  animation: boxShadow 1s ease-out infinite alternate;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -ms-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  position: relative;
+  z-index: 1;
 }
 .contacts__open.active {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.contacts__open:not(:last-child) {
-  margin: 0 0 10px 0;
+.contacts__open img {
+  max-width: 65%;
 }
 @media (min-width: 479.98px) {
   .contacts__open:hover {
-    background-color: #b051dc;
+    background-color: #ad39c7;
   }
 }
 .contacts__close {
   display: none;
-  width: 40px;
-  height: 40px;
+  position: relative;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  overflow: hidden;
-  background-color: #b766dd;
+  background-color: #b552cb;
+  margin: 15px 0 0px 0;
+  animation: boxShadow 1s ease-out infinite alternate;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -ms-transition: all 0.3s ease 0s;
@@ -720,29 +727,28 @@ body.lock {
 .contacts__close img {
   max-width: 70%;
 }
-.contacts__close:not(:last-child) {
-  margin: 0 0 10px 0;
-}
 @media (min-width: 479.98px) {
   .contacts__close:hover {
-    background-color: #b051dc;
+    background-color: #ad39c7;
   }
 }
 .contacts__items {
-  transition: all 0.7s, font-size 0s;
+  position: relative;
+  z-index: 0;
+  transition: all 0.4s, font-size 0s;
   height: 0;
   opacity: 0;
   visibility: hidden;
 }
 .contacts__items.show {
-  margin: 0 0 10px 0;
-  height: 146px;
+  transition: all 0.7s, font-size 0s;
+  height: 176px;
   opacity: 1;
   visibility: visible;
 }
 @media (max-width: 479.98px) {
   .contacts__items.show {
-    height: 196px;
+    height: 229px;
   }
 }
 .contacts__item:not(:last-child) {
@@ -762,6 +768,9 @@ body.lock {
     display: block;
   }
 }
+.contacts__item_tel {
+  position: relative;
+}
 .contacts__link {
   display: -webkit-box;
   display: -moz-box;
@@ -771,8 +780,8 @@ body.lock {
   font-size: 0;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   overflow: hidden;
   border-radius: 50%;
   -webkit-transition: all 0.3s ease 0s;
@@ -793,7 +802,49 @@ body.lock {
     transform: scale(1.05);
   }
 }
+.contacts__link_tel {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 0;
+}
+.contacts__tel-panel {
+  display: none;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  white-space: nowrap;
+  right: 60px;
+  background: url("../img/contacts/phone-black.svg") no-repeat;
+  background-position: 10px center;
+  background-size: 12%;
+  background-color: #fff;
+  height: 50px;
+  border-radius: 10px;
+  padding: 5px 20px 5px 40px;
+  color: #404040;
+  color: #000;
+  font-weight: 600;
+}
+.contacts__tel-panel.show {
+  display: flex;
+}
 
+@keyframes boxShadow {
+  0% {
+    -webkit-box-shadow: 0px 0px 21px 5px rgb(181, 82, 203);
+    -moz-box-shadow: 0px 0px 21px 5px rgb(181, 82, 203);
+    box-shadow: 0px 0px 21px 5px rgb(181, 82, 203);
+  }
+  100% {
+    -webkit-box-shadow: 0px 0px 21px 11px rgb(181, 82, 203);
+    -moz-box-shadow: 0px 0px 21px 11px rgb(181, 82, 203);
+    box-shadow: 0px 0px 21px 11px rgb(181, 82, 203);
+  }
+}
 .ibg {
   background-position: center;
   background-size: cover;
@@ -1335,7 +1386,7 @@ body.lock {
   font-size: 32px;
   font-weight: 700;
   line-height: 130%;
-  color: #DECEE9;
+  color: #fff;
 }
 .item-footer__title:not(:last-child) {
   margin: 0 0 15px 0;
